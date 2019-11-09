@@ -7,7 +7,7 @@ import os
 
 
 mytokenvk = os.environ.get('BOT_TOKEN_VK')
-#vk_session = vk_api.VkApi(token="0c0151147883a61fcc4cf73fd9255c0d53045071fb0697f8995c14294abfb1add34f73f7dd754112452bd")
+vk_session = vk_api.VkApi(token=mytokenvk)
 longpull = VkLongPoll(vk_session)
 vk = vk_session.get_api()
 
