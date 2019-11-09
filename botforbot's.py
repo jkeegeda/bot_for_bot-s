@@ -1,4 +1,4 @@
-from vk_api.longpoll import VkLongPoll, VkEventType
+from vk_api.longpoll import VkLongPoll
 from threading import Thread
 import vk_api
 import random
@@ -6,7 +6,7 @@ import time
 import os
 
 
-mytokenvk = os.environ.get('BOT_TOKEN_VK')
+mytokenvk = os.environ.get('TOKEN_VK')
 vk_session = vk_api.VkApi(token= mytokenvk)
 longpull = VkLongPoll(vk_session)
 vk = vk_session.get_api()
