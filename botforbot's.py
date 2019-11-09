@@ -11,6 +11,13 @@ vk_session = vk_api.VkApi(token=mytokenvk)
 longpull = VkLongPoll(vk_session)
 vk = vk_session.get_api()
 
+vk.messages.send(
+                chat_id=48,
+                message="запуск",
+                random_id=random.randint(0, 10000000000000000)
+        )
+
+
 
 def e_bot():
     while True:
