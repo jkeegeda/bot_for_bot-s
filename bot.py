@@ -31,12 +31,23 @@ def gorilla():
             )
             time.sleep(2)
         time.sleep(1505)
+        
+def lion():
+    while True:
+        vk.messages.send(
+                chat_id=45,
+                message="Работать",
+                random_id=random.randint(0, 10000000000000000)
+        )
+        time.sleep(91)
 
 def main():
     e_Bot = Thread(target=e_bot)
     Gorilla = Thread(target=gorilla)
+    Lion = Thread(target=lion)
     e_Bot.start()
     Gorilla.start()
+    Lion.start()
 
 
 if __name__ == '__main__':
