@@ -26,7 +26,7 @@ def gorilla():
         for _ in range(5):
             vk.messages.send(
                 chat_id=48,
-                message="Копать железо",
+                message="Копать золото",
                 random_id=random.randint(0, 10000000000000000)
             )
             time.sleep(2)
