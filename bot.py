@@ -12,14 +12,14 @@ longpull = VkLongPoll(vk_session)
 vk = vk_session.get_api()
 
 
-def e_bot():
-    while True:
-        vk.messages.send(
-                chat_id=48,
-                message="Камень",
-                random_id=random.randint(0, 10000000000000000)
-        )
-        time.sleep(20)
+# def e_bot():
+#     while True:
+#         vk.messages.send(
+#                 chat_id=48,
+#                 message="Камень",
+#                 random_id=random.randint(0, 10000000000000000)
+#         )
+#         time.sleep(20)
 
 def gorilla():
     while True:
@@ -42,10 +42,10 @@ def lion():
         time.sleep(91)
 
 def main():
-    e_Bot = Thread(target=e_bot)
+    #e_Bot = Thread(target=e_bot)
     Gorilla = Thread(target=gorilla)
     Lion = Thread(target=lion)
-    e_Bot.start()
+    #e_Bot.start()
     Gorilla.start()
     Lion.start()
 
