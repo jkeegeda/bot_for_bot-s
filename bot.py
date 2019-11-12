@@ -44,10 +44,11 @@ def lion():
 def main():
     #e_Bot = Thread(target=e_bot)
     Gorilla = Thread(target=gorilla)
-    Lion = Thread(target=lion)
+    #Lion = Thread(target=lion)
     #e_Bot.start()
     Gorilla.start()
-    Lion.start()
+    #
+#Lion.start()
 
 
 if __name__ == '__main__':
