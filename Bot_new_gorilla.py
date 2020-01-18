@@ -48,7 +48,7 @@ def answer():
 
 def gorilla_kopat():
     while True:
-        for _ in range(5):
+        for _ in range(10):
             time.sleep(10)
             vk.messages.send(
                 # chat_id= event.chat_id,
