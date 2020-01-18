@@ -1,1 +1,1 @@
-worker: python Bot_new.py
+worker: python Bot_new_gorilla.py
