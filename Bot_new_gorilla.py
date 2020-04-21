@@ -75,7 +75,7 @@ def main():
     pitomec = Thread(target=gorilla_pitomec)
     answervar.start()
     kopat.start()
-    #pitomec.start()
+    pitomec.start()
 
 
 if __name__ == '__main__':
