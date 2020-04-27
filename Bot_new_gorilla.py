@@ -79,7 +79,6 @@ def gorilla_pitomec():
         )
         time.sleep(3700)
 
-'''
 def main():
     answervar = Thread(target=answer)
     kopat = Thread(target=gorilla_kopat)
@@ -93,7 +92,7 @@ def main1():
    threading.Thread(target=answer).start()
    threading.Thread(target=gorilla_pitomec).start()
    threading.Thread(target=gorilla_kopat).start()
-
+'''
    
 if __name__ == '__main__':
-    main1()
+    main()
