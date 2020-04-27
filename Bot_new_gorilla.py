@@ -33,11 +33,22 @@ def answer():
                             message='питомец поиграть',
                             random_id=random.randint(0, 10000000000000000)
                         )
+                        vk.masseges.send(
+                            chat_id=48,
+                            message='питомец поход',
+                            random_id=random.randint(0, 10000000000000000)
+                        )
+
                     if 'покормите' in q:
                         vk.messages.send(
                             # chat_id= event.chat_id,
                             chat_id=48,
                             message='питомец покормить',
+                            random_id=random.randint(0, 10000000000000000)
+                        )
+                        vk.masseges.send(
+                            chat_id=48,
+                            message='питомец поход',
                             random_id=random.randint(0, 10000000000000000)
                         )
                     else:
@@ -68,7 +79,7 @@ def gorilla_pitomec():
         )
         time.sleep(3700)
 
-
+'''
 def main():
     answervar = Thread(target=answer)
     kopat = Thread(target=gorilla_kopat)
@@ -76,7 +87,13 @@ def main():
     answervar.start()
     kopat.start()
     pitomec.start()
+'''
 
+def main1():
+   threading.Thread(target=answer).start()
+   threading.Thread(target=gorilla_pitomec).start()
+   threading.Thread(target=gorilla_kopat).start()
 
+   
 if __name__ == '__main__':
-    main()
+    main1()
