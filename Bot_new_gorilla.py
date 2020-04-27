@@ -60,14 +60,14 @@ def answer():
 def gorilla_kopat():
     while True:
         for _ in range(5):
-            time.sleep(random.randit(10,15))
+            time.sleep(10)
             vk.messages.send(
                 # chat_id= event.chat_id,
                 chat_id=48,
                 message='копать алмазы',
                 random_id=random.randint(0, 10000000000000000)
             )
-        time.sleep(random.randit(1500,1540)
+        time.sleep(1500)
 
 
 def gorilla_pitomec():
@@ -77,7 +77,7 @@ def gorilla_pitomec():
             message="питомец поход",
             random_id=random.randint(0, 10000000000000000)
         )
-        time.sleep(random.randit(3700, 3710)
+        time.sleep(3710)
 
 def main():
     answervar = Thread(target=answer)
