@@ -80,12 +80,12 @@ def gorilla_pitomec():
         time.sleep(3710)
 
 def main():
-    answervar = Thread(target=answer)
+    #answervar = Thread(target=answer)
     kopat = Thread(target=gorilla_kopat)
-    pitomec = Thread(target=gorilla_pitomec)
-    answervar.start()
+    #pitomec = Thread(target=gorilla_pitomec)
+    #answervar.start()
     kopat.start()
-    pitomec.start()
+    #pitomec.start()
 
 '''
 def main1():
