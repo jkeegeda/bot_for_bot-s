@@ -84,7 +84,7 @@ def gorilla_pitomec():
             random_id=random.randint(0, 10000000000000000)
         )
         time.sleep(3)
-vk.messages.send(
+        vk.messages.send(
             chat_id=48,
             message="питомец поход",
             random_id=random.randint(0, 10000000000000000)
