@@ -74,6 +74,18 @@ def gorilla_pitomec():
     while True:
         vk.messages.send(
             chat_id=48,
+            message="питомец поиграть",
+            random_id=random.randint(0, 10000000000000000)
+        )
+        time.sleep(4)
+        vk.messages.send(
+            chat_id=48,
+            message="питомец покормить",
+            random_id=random.randint(0, 10000000000000000)
+        )
+        time.sleep(3)
+vk.messages.send(
+            chat_id=48,
             message="питомец поход",
             random_id=random.randint(0, 10000000000000000)
         )
@@ -82,10 +94,10 @@ def gorilla_pitomec():
 def main():
     #answervar = Thread(target=answer)
     kopat = Thread(target=gorilla_kopat)
-    #pitomec = Thread(target=gorilla_pitomec)
+    pitomec = Thread(target=gorilla_pitomec)
     #answervar.start()
     kopat.start()
-    #pitomec.start()
+    pitomec.start()
 
 '''
 def main1():
