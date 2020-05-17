@@ -89,6 +89,14 @@ def gorilla_pitomec():
             message="питомец поход",
             random_id=random.randint(0, 10000000000000000)
         )
+
+        time.sleep(3)
+        vk.messages.send(
+            chat_id=48,
+            message="принтер заправить",
+            random_id=random.randint(0, 10000000000000000)
+        )
+
         time.sleep(3710)
 
 def main():
