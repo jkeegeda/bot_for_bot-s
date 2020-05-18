@@ -64,7 +64,7 @@ def gorilla_kopat():
             vk.messages.send(
                 # chat_id= event.chat_id,
                 chat_id=48,
-                message='копать алмазы',
+                message='копать материю',
                 random_id=random.randint(0, 10000000000000000)
             )
         time.sleep(1500)
