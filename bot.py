@@ -23,14 +23,14 @@ vk = vk_session.get_api()
 
 def gorilla():
     while True:
-        for _ in range(5):
+        for _ in range(1):
             vk.messages.send(
                 chat_id=48,
-                message="Копать алмазы",
+                message="гонка",
                 random_id=random.randint(0, 10000000000000000)
             )
             time.sleep(2)
-        time.sleep(1505)
+        time.sleep(605)
         
 def lion():
     while True:
